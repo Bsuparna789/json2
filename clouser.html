@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+  /*  function a(){
+        var name = "abc"; // local variable created by a
+        function display(){ // inner function, which is a clouser
+            alert(name);// variable declared in the parent function
+        }
+        display();
+    }
+    a();
+
+    var e = 10;
+    function sum(a){
+        return function(b){
+            return function(c){
+                return function(d){
+                    return a+b+c+d+e;
+                }
+            }
+
+        }
+    }
+   console.log(sum(2)(3)(4)(5));*/
+
+   function a(x){
+       return function(y){
+           return x+y;
+       };
+   }
+   var c = a(5); // clouser function
+   console.log(c(4)); // parent function
+
+   var d = a(9);
+   console.log(d(10));
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
